@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<DataTemplate
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MvvmDataTemplate.Templates.StepTwoTemplate">
+
+    <StackLayout Spacing="20">
+        <Label Text="Step 2"
+               HorizontalTextAlignment="Center"/>
+        <Image Source="{Binding Model.ImageName}"
+               HeightRequest="200"
+               WidthRequest="200"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+    </StackLayout>
+
+</DataTemplate>

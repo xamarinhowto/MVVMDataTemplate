@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<DataTemplate
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MvvmDataTemplate.Templates.StepOneTemplate">
+
+    <StackLayout Spacing="20">
+        <Label Text="Step 1"
+               HorizontalTextAlignment="Center"/>
+        <Label Text="Welcome to the set up wizard of the Xamarin how-to app"
+               HorizontalTextAlignment="Center"/>
+        <Label Text="Tap the button below to see more information"/>
+        <Button Text="Tap Me"
+                Command="{Binding Model.ButtonCommand}"/>
+        <Label Text="{Binding Model.Message}"
+               IsVisible="{Binding Model.IsMessageShowing}"/>
+    </StackLayout>
+
+</DataTemplate>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<DataTemplate
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MvvmDataTemplate.Templates.StepThreeTemplate">
+
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Step 3"
+               HorizontalTextAlignment="Center"/>
+            <StackLayout BindableLayout.ItemsSource="{Binding Model.Items}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout BackgroundColor="{Binding BackgroundColor}">
+                            <Label Text="{Binding Text}"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+
+</DataTemplate>
